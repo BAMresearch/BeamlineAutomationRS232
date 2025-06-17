@@ -1,6 +1,6 @@
 # BeamlineAutomationRS232
 
-A collection of Python drivers for RS-232 control of common beamline components at BAM:
+A collection of Python drivers for RS-232 control of common beamline components at the mySpot beamline of BESSY-II (HZB):
 
 - **WPI Aladdin syringe pump**  
 - **VICI 10+1 selector valve** (MU actuator)  
@@ -126,16 +126,6 @@ if plate.ser:
 else:
     print("Failed to open plate serial port.")
 ```
-
----
-
-## Extending & Troubleshooting
-
-- **Add new commands** by editing the `COMMANDS` dict in each module.  
-- **Permission errors**: on Linux, ensure your user is in the `dialout` group.  
-- **Pump “ticking”**: verify homing, syringe seating, correct diameter, and rate.  
-- **Valve stalls**: ensure correct mode (`AM3`) and NP value.  
-- **Plate no-response**: confirm 7E1 framing and correct NAMUR channel codes.
 
 ---
 
