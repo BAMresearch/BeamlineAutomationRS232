@@ -1,8 +1,9 @@
+#!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """
-Spyder Editor
+Created on Tue Jun 17 13:30:24 2025
 
-This is a temporary script file.
+@author: tomaszstawski
 """
 
 import serial
