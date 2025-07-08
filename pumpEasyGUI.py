@@ -10,6 +10,13 @@ PumpGUI: A Tkinter GUI for controlling a WPI Aladdin syringe pump over RS-232.
 Allows you to set syringe diameter, units, and then withdraw or dispense arbitrary
 volumes (up to 50 mL) in chunks ≤ 9.999 mL, with a real‐time progress bar and
 live update of current volume.
+
+To set permissions for a serial port under Linux:
+sudo usermod -a -G tty $USER
+sudo usermod -a -G dialout $USER
+REBOOT
+
+
 """
 
 import serial
