@@ -16,6 +16,15 @@ sudo usermod -a -G tty $USER
 sudo usermod -a -G dialout $USER
 REBOOT
 
+Under Windows:
+change 
+device: str = "/dev/ttyUSB0"
+
+to
+check the port assignement in "Device Manager". Read out the port name e.g. "COM1". 
+device: str = "COM1"
+The port name may change upon each physical reconnection of a serial adapter.
+
 
 """
 
